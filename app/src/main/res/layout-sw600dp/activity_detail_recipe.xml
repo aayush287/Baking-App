@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/two_pane_linear_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:id="@+id/recipe_steps_list_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        tools:layout="@layout/fragment_detail_recipe"/>
+
+    <FrameLayout
+        android:id="@+id/recipe_step_details_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        tools:layout="@layout/fragment_step_detail">
+    </FrameLayout>
+
+</LinearLayout>
